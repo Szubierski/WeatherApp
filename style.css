@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0px;
+    padding-top: 80px;
+    background-color: rgb(249, 249, 249);
+}
+
+.weatherApp {
+    width: 50%;
+    height: 695px;
+    margin: auto;
+    background-color: rgb(62, 62, 62);
+    border-radius: 10px;
+    box-shadow: 5px 5px 12px -2px #000000;
+}
+
+.head {
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    height: 180px;
+    background: linear-gradient(151deg, rgba(249,0,0,1) 0%, rgba(249,255,0,1) 100%);
+    padding-top: 5px;
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 6px rgba(66, 68, 90, 1);
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.errorMsg {
+    margin-top: 7px;
+    text-align: center;
+}
+
+.cityName {
+    width: 60%;
+    height: 35px;
+    margin-right: 30px;
+    padding-left: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.searchBtn {
+    width: 80px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: all .2s 0s ease-in-out;
+}
+
+.searchBtn:hover {
+    cursor: pointer;
+    background-color: rgba(66, 68, 90, 1);
+    color: white;
+}
+
+.errorMsg {
+    margin-top: 7px;
+    text-align: center;
+}
+
+.mainInfo {
+    width: 96%;
+    height: 200px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(87, 87, 87);
+    border-radius: 20px;
+    box-shadow: inset 10px 10px 23px -11px rgb(0, 0, 0);
+}
+
+.city {
+    width: 50%;
+    height: 200px;
+    font-size: 46px;
+    text-align: center;
+    text-wrap: balance;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: solid underline rgb(255, 166, 0) 3px;
+    text-underline-offset: 5px;
+    margin: 0px;
+    padding-top: 70px;
+    padding-left: 10px;
+}
+
+.wImg {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.wImg img {
+    width: 150px;
+    height: 150px;
+    filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(157deg) brightness(120%) contrast(118%);
+}
+
+.otherInfo {
+    width: 100%;
+    height: 315px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.info {
+    width: 27%;
+    height: 230px;
+    display: inline;
+    margin: 30px auto;
+    background-color: rgb(87, 87, 87);
+    border-radius: 20px;
+    box-shadow: inset 10px 10px 23px -11px rgb(0, 0, 0);
+}
+
+.info p {
+    color: white;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+}
+
+.text {
+    height: 100px;
+    font-size: 24px;
+    text-transform: uppercase;
+    padding-top: 30px;
+    text-decoration: solid overline rgb(255, 166, 0) 3px;
+    text-underline-offset: 5px;
+}
+
+.value {
+    font-size: 40px;
+    height: 100px;
+    padding-top: 0px;
+    text-wrap: balance;
+}

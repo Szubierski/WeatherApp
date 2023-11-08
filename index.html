@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@100" rel="stylesheet" />
+</head>
+<body>
+    <main class="weatherApp">
+        <header class="head">
+            <h1>Weather App</h1>
+            <section class="inputs">
+                <input type="text" class="cityName" placeholder="Enter city name...">
+                <button class="searchBtn">SEARCH</button>
+            </section>
+            <p class="errorMsg"></p>
+        </header>
+        <section class="weather">
+            <section class="mainInfo">
+                <p class="city">---</p>
+                <div class="wImg">
+                    <img src="img/sunny.svg" alt="weather">
+                </div>
+            </section>
+            <section class="otherInfo">
+                <div class="info">
+                    <p class="text">Weather:</p>
+                    <p class="value wValue">---</p>
+                </div>
+                <div class="info">
+                    <p class="text">Temperature:</p>
+                    <p class="value tValue">---°C</p>
+                </div>
+                <div class="info">
+                    <p class="text">Humidity:</p>
+                    <p class="value hValue">---%</p>
+                </div>
+            </section>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
